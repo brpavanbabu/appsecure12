@@ -1,0 +1,32 @@
+{
+  "name": "appsecure",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.16.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "yolo": "set NODE_ENV=production && next dev --no-check --turbo",
+    "setup-and-dev": "npm install && npm run dev",
+    "dev:ignore-version": "cross-env NEXT_IGNORE_NODE_VERSION=true next dev"
+  },
+  "dependencies": {
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "next-auth": "^4.24.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "13.4.19",
+    "cross-env": "^7.0.3"
+  }
+} 
