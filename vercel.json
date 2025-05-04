@@ -7,9 +7,9 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://appsecure-smoky.vercel.app/api",
+    "NEXT_PUBLIC_API_URL": "https://appsecure12-o8h70wm6u-pavans-projects-bed18760.vercel.app/api",
     "NEXTAUTH_SECRET": "BcD58U2hfnzwx4Ob7paLYlL3aAy2LEgmPFj6NHLcgIw=",
-    "NEXTAUTH_URL": "https://appsecure-smoky.vercel.app"
+    "NEXTAUTH_URL": "https://appsecure12-o8h70wm6u-pavans-projects-bed18760.vercel.app"
   },
   "github": {
     "silent": true
