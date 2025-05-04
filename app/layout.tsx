@@ -1,7 +1,10 @@
+import { Providers } from './providers';
+import './globals.css';
+
 export const metadata = {
-  title: 'My Next.js App',
-  description: 'Created with Next.js',
-}
+  title: 'Secure Chat Application',
+  description: 'A secure chat application with NextAuth.js',
+};
 
 export default function RootLayout({
   children,
@@ -10,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 } 
