@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "buildCommand": "cd secure-chat && npm install && npm run build",
-  "outputDirectory": "secure-chat/.next",
-  "framework": "nextjs",
+  "builds": [
+    {
+      "src": "secure-chat/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/secure-chat/$1"
+    }
+  ],
   "env": {
     "NEXTAUTH_SECRET": "BcD58U2hfnzwx4Ob7paLYlL3aAy2LEgmPFj6NHLcgIw=",
     "NEXTAUTH_URL": "https://appsecure12-pt9x19a24-pavans-projects-bed18760.vercel.app"
