@@ -1,20 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
+  "buildCommand": "cd secure-chat && npm install && npm run build",
+  "outputDirectory": "secure-chat/.next",
+  "framework": "nextjs",
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://appsecure12-o8h70wm6u-pavans-projects-bed18760.vercel.app/api",
     "NEXTAUTH_SECRET": "BcD58U2hfnzwx4Ob7paLYlL3aAy2LEgmPFj6NHLcgIw=",
-    "NEXTAUTH_URL": "https://appsecure12-o8h70wm6u-pavans-projects-bed18760.vercel.app"
-  },
-  "github": {
-    "silent": true
-  },
-  "git": {
-    "submodules": false
+    "NEXTAUTH_URL": "https://appsecure12-pt9x19a24-pavans-projects-bed18760.vercel.app"
   }
 } 
